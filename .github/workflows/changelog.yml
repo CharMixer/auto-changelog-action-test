@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Generate changelog
-        uses: charmixer/auto-changelog-action@v1.2
+        uses: charmixer/auto-changelog-action@v1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           exclude_labels: ci
