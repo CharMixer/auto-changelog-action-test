@@ -17,7 +17,7 @@ jobs:
       - name: Generate changelog
         uses: charmixer/auto-changelog-action@upgrade_to_1.15.2
         with:
-          token: ${{ GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           exclude_labels: ci
 
       - name: Check for changes
@@ -30,7 +30,7 @@ jobs:
         if: env.changes == 1
         uses: peter-evans/create-pull-request@v2
         with:
-          token: ${{ GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Updated CHANGELOG.md"
           title: 'Update CHANGELOG'
           body: |
