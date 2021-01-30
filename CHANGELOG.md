@@ -6,6 +6,7 @@
 
 **Closed issues:**
 
+- test e [\#4](https://github.com/charmixer/auto-changelog-action-test/issues/4)
 - Testing.. [\#3](https://github.com/charmixer/auto-changelog-action-test/issues/3)
 - Testing issue [\#1](https://github.com/charmixer/auto-changelog-action-test/issues/1)
 
