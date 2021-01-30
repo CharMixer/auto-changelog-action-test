@@ -23,11 +23,11 @@ jobs:
       - name: Check for changes
         run: |
           if [[ `git status --porcelain` ]]; then
-            echo ::set-env name=changes::1
+            echo "changes=true" >> $GITHUB_ENV
           fi
 
       - name: Create Pull Request
-        if: env.changes == 1
+        if: env.changes == 'true'
         uses: peter-evans/create-pull-request@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
