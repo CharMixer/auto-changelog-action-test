@@ -36,3 +36,4 @@ jobs:
           body: |
             Updated CHANGELOG.md
           branch: changelog
+          label: ci
